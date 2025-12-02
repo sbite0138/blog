@@ -1,0 +1,4 @@
+baseURL = 'https://blog.sbite0138.net'
+languageCode = 'ja-jp'
+title = 'My New Hugo Site'
+theme = 'diary'
