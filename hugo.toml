@@ -1,4 +1,31 @@
 baseURL = 'https://blog.sbite0138.net'
 languageCode = 'ja-jp'
 title = '少しずつならかじれる'
-theme = 'diary'
+hasCJKLanguage = true
+
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+tag = 'tags'
+
+[markup.highlight]
+style = 'nord'
+
+[params]
+description = '日記と週報のブログ'
+
+[[menus.main]]
+name = '記事'
+pageRef = '/posts'
+weight = 10
+
+[[menus.main]]
+name = '週報'
+pageRef = '/daily'
+weight = 20
+
+[[menus.main]]
+name = 'タグ'
+pageRef = '/tags'
+weight = 30

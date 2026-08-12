@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ $pages := where site.RegularPages "Type" "in" (slice "posts" "daily") }}
+{{ $pag := .Paginate $pages }}
+{{ range $pag.Pages }}
+{{ partial "article.html" . }}
+{{ end }}
+{{ partial "paginator.html" . }}
+{{ end }}

@@ -1,0 +1,8 @@
+{{ define "main" }}
+<h1 class="page-title"><b>{{ .Title }}</b> の記事</h1>
+{{ $pag := .Paginate .Pages }}
+{{ range $pag.Pages }}
+{{ partial "article.html" . }}
+{{ end }}
+{{ partial "paginator.html" . }}
+{{ end }}

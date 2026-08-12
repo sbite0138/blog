@@ -1,0 +1,8 @@
+{{ $pag := .Paginator }}
+{{ if gt $pag.TotalPages 1 }}
+<nav class="paginator">
+  <span>{{ with $pag.Prev }}<a href="{{ .URL }}">&larr; 新しい記事</a>{{ end }}</span>
+  <span class="page-of">{{ $pag.PageNumber }} / {{ $pag.TotalPages }}</span>
+  <span>{{ with $pag.Next }}<a href="{{ .URL }}">古い記事 &rarr;</a>{{ end }}</span>
+</nav>
+{{ end }}
